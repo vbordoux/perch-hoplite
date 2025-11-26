@@ -26,7 +26,7 @@ import warnings
 from etils import epath
 import librosa
 import numpy as np
-from perch_hoplite import path_utils
+import path_utils
 import requests
 import soundfile
 

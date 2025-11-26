@@ -20,8 +20,8 @@ import enum
 import importlib
 
 from ml_collections import config_dict
-from perch_hoplite.zoo import hub
-from perch_hoplite.zoo import zoo_interface
+from zoo import hub
+from zoo import zoo_interface
 
 
 class ModelConfigName(enum.Enum):

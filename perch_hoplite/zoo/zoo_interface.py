@@ -24,7 +24,7 @@ from etils import epath
 import librosa
 from ml_collections import config_dict
 import numpy as np
-from perch_hoplite.taxonomy import namespace
+from taxonomy import namespace
 import tensorflow as tf
 
 LogitType = Dict[str, np.ndarray]

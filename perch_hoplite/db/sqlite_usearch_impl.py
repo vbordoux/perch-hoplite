@@ -26,7 +26,7 @@ from typing import Any
 from etils import epath
 from ml_collections import config_dict
 import numpy as np
-from perch_hoplite.db import interface
+from db import interface
 from usearch import index as uindex
 
 

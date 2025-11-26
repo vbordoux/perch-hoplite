@@ -24,11 +24,11 @@ from absl import logging
 import audioread
 from ml_collections import config_dict
 import numpy as np
-from perch_hoplite import audio_io
-from perch_hoplite.agile import source_info
-from perch_hoplite.db import interface as hoplite_interface
-from perch_hoplite.zoo import model_configs
-from perch_hoplite.zoo import zoo_interface
+import audio_io
+from agile import source_info
+from db import interface as hoplite_interface
+from zoo import model_configs
+from zoo import zoo_interface
 import soundfile
 
 

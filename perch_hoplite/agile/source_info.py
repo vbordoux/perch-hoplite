@@ -21,8 +21,8 @@ from typing import Iterator
 from absl import logging
 from etils import epath
 from ml_collections import config_dict
-from perch_hoplite import audio_io
-from perch_hoplite.db import interface as hoplite_interface
+import audio_io
+from db import interface as hoplite_interface
 import soundfile
 import tqdm
 

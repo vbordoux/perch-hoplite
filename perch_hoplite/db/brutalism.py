@@ -20,8 +20,8 @@ import threading
 from typing import Any, Callable, Sequence
 
 import numpy as np
-from perch_hoplite.db import interface
-from perch_hoplite.db import search_results
+from db import interface
+from db import search_results
 
 
 def worker_initializer(state):

@@ -19,9 +19,9 @@ import dataclasses
 
 from etils import epath
 from ml_collections import config_dict
-from perch_hoplite.db import in_mem_impl
-from perch_hoplite.db import interface
-from perch_hoplite.db import sqlite_usearch_impl
+from db import in_mem_impl
+from db import interface
+from db import sqlite_usearch_impl
 import tqdm
 
 
