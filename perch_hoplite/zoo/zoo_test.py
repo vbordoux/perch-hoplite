@@ -16,8 +16,8 @@
 """Tests for mass-embedding functionality."""
 
 import numpy as np
-from perch_hoplite.zoo import model_configs
-from perch_hoplite.zoo import zoo_interface
+from zoo import model_configs
+from zoo import zoo_interface
 
 from absl.testing import absltest
 from absl.testing import parameterized

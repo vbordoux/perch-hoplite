@@ -19,8 +19,8 @@ import dataclasses
 
 from ml_collections import config_dict
 import numpy as np
-from perch_hoplite.taxonomy import namespace_db
-from perch_hoplite.zoo import zoo_interface
+from taxonomy import namespace_db
+from zoo import zoo_interface
 
 
 @dataclasses.dataclass

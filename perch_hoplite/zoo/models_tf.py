@@ -23,11 +23,11 @@ from absl import logging
 from etils import epath
 from ml_collections import config_dict
 import numpy as np
-from perch_hoplite.taxonomy import namespace
-from perch_hoplite.taxonomy import namespace_db
-from perch_hoplite.zoo import hub
-from perch_hoplite.zoo import taxonomy_model_tf
-from perch_hoplite.zoo import zoo_interface
+from taxonomy import namespace
+from taxonomy import namespace_db
+from zoo import hub
+from zoo import taxonomy_model_tf
+from zoo import zoo_interface
 import tensorflow as tf
 import tensorflow.compat.v1 as tf1
 

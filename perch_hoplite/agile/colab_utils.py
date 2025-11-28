@@ -19,11 +19,11 @@ import dataclasses
 
 from etils import epath
 from ml_collections import config_dict
-from perch_hoplite.agile import embed
-from perch_hoplite.agile import source_info
-from perch_hoplite.db import db_loader
-from perch_hoplite.db import sqlite_usearch_impl
-from perch_hoplite.zoo import model_configs
+from agile import embed
+from agile import source_info
+from db import db_loader
+from db import sqlite_usearch_impl
+from zoo import model_configs
 
 
 @dataclasses.dataclass

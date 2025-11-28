@@ -20,7 +20,7 @@ import dataclasses
 import librosa
 from ml_collections import config_dict
 import numpy as np
-from perch_hoplite.zoo import zoo_interface
+from zoo import zoo_interface
 
 
 @dataclasses.dataclass
