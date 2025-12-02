@@ -20,7 +20,7 @@ import itertools
 from typing import Any, Iterator, Sequence
 
 import numpy as np
-from perch_hoplite.db import interface
+from db import interface
 
 
 @dataclasses.dataclass

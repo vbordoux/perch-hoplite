@@ -20,8 +20,8 @@ from typing import Callable
 
 from etils import epath
 import numpy as np
-from perch_hoplite import audio_io
-from perch_hoplite.agile import source_info
+import audio_io
+from agile import source_info
 
 
 def make_filepath_loader(

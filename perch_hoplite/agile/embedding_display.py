@@ -27,9 +27,9 @@ import librosa
 from librosa import display as librosa_display
 from matplotlib import pyplot as plt
 import numpy as np
-from perch_hoplite import audio_io
-from perch_hoplite.db import interface
-from perch_hoplite.db import search_results
+import audio_io
+from db import interface
+from db import search_results
 
 
 @dataclasses.dataclass
@@ -90,7 +90,7 @@ class QueryDisplay:
     # Display full-audio spectrogram
     if display_full and self.full_spectrogram is not None:
       librosa_display.specshow(
-          self.full_spectrogram.T,
+          librosa.power_to_db(self.full_spectrogram, ref= np.max).T,
           sr=self.sample_rate_hz,
           y_axis='mel',
           x_axis='time',
@@ -105,7 +105,7 @@ class QueryDisplay:
     # Display the current window.
     if self.window_spectrogram is not None:
       librosa_display.specshow(
-          self.window_spectrogram.T,
+          librosa.power_to_db(self.full_spectrogram, ref= np.max).T,
           sr=self.sample_rate_hz,
           y_axis='mel',
           x_axis='time',
@@ -212,7 +212,7 @@ class EmbeddingDisplay:
       return
     # Display spectrogram
     librosa_display.specshow(
-        self.spectrogram.T,
+        librosa.power_to_db(self.spectrogram, ref= np.max).T,
         sr=self.sample_rate_hz,
         y_axis='mel',
         x_axis='time',

@@ -24,9 +24,9 @@ from typing import Any, Iterator, Sequence
 from etils import epath
 from ml_collections import config_dict
 import numpy as np
-from perch_hoplite.agile import classifier_data
-from perch_hoplite.agile import metrics
-from perch_hoplite.db import interface as db_interface
+from agile import classifier_data
+from agile import metrics
+from db import interface as db_interface
 import tensorflow as tf
 import tqdm
 
